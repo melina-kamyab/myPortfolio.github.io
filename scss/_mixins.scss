@@ -1,0 +1,22 @@
+@mixin phone {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablets-up {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin centering-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin centering-horizontal {
+  display: flex;
+  justify-content: space-between;
+}

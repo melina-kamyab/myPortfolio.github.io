@@ -1,0 +1,42 @@
+.carousel-item{
+    height: 25rem;
+    color: white;
+    position: relative;
+    background: black;
+}
+
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 1rem;
+    text-align: left;
+    //width: 100%;
+
+
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover ;
+    opacity: 0.75;
+  
+}
+
+.btn-secondary{
+font-size: 0.7rem;
+opacity: 0.8;
+
+@include tablets-up {
+font-size: 1rem;
+  }
+}

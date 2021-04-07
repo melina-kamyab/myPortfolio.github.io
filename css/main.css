@@ -1,0 +1,319 @@
+.wave {
+  font-size: 1.25rem;
+  padding-left: 0.625rem;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.carousel-item {
+  height: 25rem;
+  color: white;
+  position: relative;
+  background: black;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.container h2 {
+  font-size: 2rem;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.75;
+}
+
+.btn-secondary {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+@media screen and (min-width: 769px) {
+  .btn-secondary {
+    font-size: 1rem;
+  }
+}
+
+body {
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  height: 60vh;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../background-images/purplesky.jpg");
+}
+header h1 {
+  margin-top: 5rem;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px #544646;
+  margin-top: 4rem;
+  color: white;
+}
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 4rem;
+  }
+}
+
+.about-me {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.about-me img {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.255);
+}
+.about-me a {
+  background-color: #494e6bb9;
+  font-size: 1.2rem;
+  color: white;
+  padding: 1.563rem;
+  text-decoration: none;
+  border-radius: 0.99rem;
+  width: 17.5rem;
+  height: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 769px) {
+  .about-me a {
+    width: 20rem;
+    height: 1rem;
+  }
+}
+
+.header-description {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.description {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: rgba(245, 245, 245, 0.694);
+  color: #985e6d;
+  padding: 1rem;
+  top: 100%;
+  width: 70%;
+}
+@media screen and (min-width: 769px) {
+  .description {
+    width: 40%;
+  }
+}
+
+main {
+  width: 100vw;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #192231;
+}
+main h1 {
+  margin-top: 3rem;
+  font-size: 1.9rem;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  main h1 {
+    font-size: 2.9rem;
+  }
+}
+main .my-projects h1 {
+  width: 100%;
+  text-shadow: 2px 2px #060606;
+}
+main .three {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 160%;
+  font-weight: bolder;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  border-radius: 50%;
+  color: #767373;
+  text-shadow: 0.1rem 0.1rem solid white;
+  text-align: center;
+}
+
+.top-3 {
+  width: 100vw;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-3 .this-is-me {
+  font-size: 0.9rem;
+  background-color: #8e6b7b61;
+  width: 50%;
+  margin: 2rem;
+  color: white;
+  padding: 1rem;
+  border: 2px solid #b0c4de;
+  box-shadow: 0.1rem 0.1rem 0rem rgba(128, 128, 128, 0.516);
+}
+@media screen and (min-width: 769px) {
+  .top-3 .this-is-me {
+    font-size: 1.2rem;
+  }
+}
+.top-3 h3 {
+  margin: 0 0 1rem 0;
+}
+
+.my-projects {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  background-image: url("../../background-images/texture.png");
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #192231;
+  width: 100vw;
+  display: flex;
+}
+@media screen and (min-width: 769px) {
+  .my-projects {
+    width: 100%;
+  }
+}
+.my-projects .project {
+  width: 80%;
+  border: 0.3rem solid #00000059;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: rgba(111, 104, 104, 0.851);
+}
+
+.contact {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #767373;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #192231;
+  font-weight: bold;
+  padding: 3rem;
+}
+.contact p {
+  width: 75%;
+  font-size: 1rem;
+  color: white;
+  margin: 2rem;
+}
+@media screen and (min-width: 769px) {
+  .contact p {
+    font-size: 1.9rem;
+  }
+}
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  border: 0.2rem solid white;
+  padding-left: 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.365);
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 769px) {
+  .contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60vw;
+  }
+}
+.contact ul li {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.5rem;
+}
+.contact ul li a {
+  text-decoration: none;
+  color: #192231;
+}
+.contact ul li i {
+  padding-right: 1rem;
+  color: white;
+}
+@media screen and (min-width: 769px) {
+  .contact ul li {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
