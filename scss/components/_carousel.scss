@@ -32,10 +32,10 @@
 
 .btn-secondary{
 background-color: burlywood;
-font-size: 0.7rem;
+font-size: $fs-tiny;
 border: none;
 
 @include verticalTablet{
-font-size: 1rem;
+font-size: $fs-bread-sm;
   }
 }

@@ -1,5 +1,20 @@
-@import "./base";
 @import "../mixins";
+
+// FONT SIZES
+$fs-heading: 3.2rem;
+$fs-title: 2.4rem;
+$fs-subtitle: 1.7rem;
+$fs-body: 1.4rem;
+$fs-bread: 1.2rem;
+$fs-bread-sm: 0.9rem;
+$fs-tiny: 0.5rem;
+
+// FONT WEIGHTS
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+
 
 h1{
     text-transform: uppercase;
@@ -22,14 +37,14 @@ h1{
   }
 
   p{
-    font-size: $fs-bread;
+    font-size: $fs-bread-sm;
     @include verticalTablet{
-      font-size: $fs-bread;
+      font-size: $fs-body;
     }
   }
 
   span{
-    font-size: $fs-bread;
+    font-size: $fs-bread-sm;
     @include verticalTablet{
       font-size: $fs-body;
     }
@@ -39,7 +54,7 @@ h1{
   }
 
   a{
-    font-size: $fs-bread;
+    font-size: $fs-bread-sm;
     @include verticalTablet{
       font-size: $fs-body;
     }
