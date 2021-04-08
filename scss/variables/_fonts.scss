@@ -39,7 +39,7 @@ h1{
   p{
     font-size: $fs-bread-sm;
     @include verticalTablet{
-      font-size: $fs-body;
+      font-size: $fs-bread;
     }
   }
 
