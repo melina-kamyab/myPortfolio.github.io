@@ -1,0 +1,57 @@
+@import "./base";
+@import "../mixins";
+
+h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: $fs-subtitle;
+    @include verticalTablet{
+      font-size: $fs-title;
+    }
+    @include desktop{
+      font-size: $fs-heading;
+    }
+  }
+
+  h3{
+    color: white;
+    font-size: $fs-bread;
+    @include verticalTablet {
+      font-size: $fs-subtitle;
+    }
+  }
+
+  p{
+    font-size: $fs-bread;
+    @include verticalTablet{
+      font-size: $fs-bread;
+    }
+  }
+
+  span{
+    font-size: $fs-bread;
+    @include verticalTablet{
+      font-size: $fs-body;
+    }
+    @include desktop{
+      font-size: $fs-subtitle;
+    }
+  }
+
+  a{
+    font-size: $fs-bread;
+    @include verticalTablet{
+      font-size: $fs-body;
+    }
+    @include desktop{
+      font-size: $fs-subtitle;
+    }
+  }
+
+  li{
+    font-size: $fs-tiny;
+    @include verticalTablet {
+      font-size: $fs-bread;
+    }
+  }
+

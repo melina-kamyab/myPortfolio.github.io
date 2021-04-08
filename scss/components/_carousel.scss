@@ -33,6 +33,7 @@
 .btn-secondary{
 background-color: burlywood;
 font-size: 0.7rem;
+border: none;
 
 @include verticalTablet{
 font-size: 1rem;

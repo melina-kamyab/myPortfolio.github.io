@@ -1,5 +1,76 @@
+h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+h3 {
+  color: white;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+span {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  span {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  span {
+    font-size: 1.7rem;
+  }
+}
+
+a {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  a {
+    font-size: 1.7rem;
+  }
+}
+
+li {
+  font-size: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  li {
+    font-size: 1rem;
+  }
+}
+
 .wave {
-  font-size: 1.25rem;
   padding-left: 0.625rem;
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -67,6 +138,7 @@
 .btn-secondary {
   background-color: burlywood;
   font-size: 0.7rem;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .btn-secondary {
@@ -93,22 +165,13 @@ header {
 }
 @media screen and (min-width: 768px) {
   header {
-    height: 75vh;
+    height: 80vh;
   }
 }
 header h1 {
-  text-transform: uppercase;
   margin-top: 5rem;
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 1.5px 1.5px #544646;
+  text-shadow: 1.5px 1.5px #86567c;
   margin-top: 4rem;
-  color: white;
-}
-@media screen and (min-width: 768px) {
-  header h1 {
-    font-size: 3rem;
-  }
 }
 
 .about-me {
@@ -131,9 +194,14 @@ header h1 {
     height: 15rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .about-me img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
 .about-me a {
   background-color: #494e6bb9;
-  font-size: 1rem;
   color: white;
   padding: 1.563rem;
   text-decoration: none;
@@ -147,17 +215,8 @@ header h1 {
 }
 @media screen and (min-width: 768px) {
   .about-me a {
-    width: 20rem;
+    width: 25rem;
     height: 2rem;
-    font-size: 1.5rem;
-  }
-}
-.about-me span {
-  font-size: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .about-me span {
-    font-size: 1.5rem;
   }
 }
 
@@ -181,7 +240,7 @@ header h1 {
 }
 @media screen and (min-width: 768px) {
   .description {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -195,38 +254,19 @@ main {
   background-color: #192231;
 }
 main h1 {
-  text-transform: uppercase;
+  text-shadow: 1.5px 1.5px #2e2b2d;
   margin-top: 3rem;
-  font-size: 1.9rem;
   width: 90%;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   main h1 {
-    font-size: 2.9rem;
     width: 50%;
   }
 }
 main .my-projects h1 {
-  text-transform: uppercase;
   width: 100%;
-  text-shadow: 2px 2px #060606;
-}
-main h3 {
-  font-size: 1rem;
-}
-@media screen and (min-width: 768px) {
-  main h3 {
-    font-size: 2rem;
-  }
-}
-main p {
-  font-size: 0.7rem;
-}
-@media screen and (min-width: 768px) {
-  main p {
-    font-size: 1rem;
-  }
+  text-shadow: 2px 2px #353535;
 }
 main .three {
   font-family: "Shadows Into Light", cursive;
@@ -304,16 +344,9 @@ main .three {
   font-weight: bold;
   padding: 3rem;
 }
-.contact p {
+.contact h3 {
   width: 75%;
-  font-size: 1rem;
-  color: white;
   margin: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .contact p {
-    font-size: 1.9rem;
-  }
 }
 .contact ul {
   display: flex;
@@ -323,14 +356,13 @@ main .three {
   padding-left: 0;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.365);
-  font-size: 0.9rem;
 }
 @media screen and (min-width: 768px) {
   .contact ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60vw;
+    width: 90vw;
   }
 }
 .contact ul li {
@@ -338,16 +370,28 @@ main .three {
   padding-left: 0;
   font-size: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .contact ul li {
+    font-size: 1rem;
+  }
+}
 .contact ul li a {
   text-decoration: none;
   color: #192231;
+  font-size: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contact ul li a {
+    font-size: 1rem;
+  }
 }
 .contact ul li i {
   padding-right: 1rem;
   color: white;
+  font-size: 0.5rem;
 }
 @media screen and (min-width: 768px) {
-  .contact ul li {
+  .contact ul li i {
     font-size: 1rem;
   }
 }

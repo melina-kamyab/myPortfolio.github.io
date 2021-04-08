@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 //HEADER STARTS HERE
@@ -22,26 +23,13 @@ header {
   background-image: url("../background-images/purplesky.jpg");
 
   @include verticalTablet {
-    height: 75vh;
+    height: 80vh;
   }
 
   h1 {
-    text-transform: uppercase;
     margin-top: 5rem;
-    font-size: 1.5rem;
-    color: white;
-    text-shadow: 1.5px 1.5px #544646;
+    text-shadow: 1.5px 1.5px #86567c;
     margin-top: 4rem;
-    color: white;
-
-    @include verticalTablet {
-      font-size: 3rem;
-    }
-
-    // @include desktop{
-    //   font-size: 5rem;
-    // }
-  
   }
 }
 
@@ -63,17 +51,14 @@ header {
       width: 15rem;
       height: 15rem;
     }
-    // @include desktop{
-    //   width: 30rem;
-    //   height:30rem;
-    // }
-  
-
+    @include desktop{
+      width: 20rem;
+      height: 20rem;
+    }
   }
 
   a {
     background-color: #494e6bb9;
-    font-size: 1rem;
     color: white;
     padding: 1.563rem;
     text-decoration: none;
@@ -84,26 +69,11 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 4rem;
-    @include verticalTablet {
-      width: 20rem;
-      height: 2rem;
-      font-size: 1.5rem;
-    }
 
-    // @include desktop{
-    //   width: 30rem;
-    //   height: 4rem;
-    //   font-size: 2rem;
-    // }
-  }
-  span{
-    font-size: 1rem;
     @include verticalTablet {
-      font-size: 1.5rem;
+      width: 25rem;
+      height: 2rem;
     }
-    // @include desktop{
-    //   font-size: 2rem;
-    // }
   }
 }
 
@@ -113,14 +83,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
-  // @include verticalTablet {
-  //   height: 60vh;
-  // }
-
-  // @include desktop{
-  //   height: 45vh;
-  // }
 }
 
 .description {
@@ -134,13 +96,8 @@ header {
   width: 70%;
 
   @include verticalTablet {
-    width: 50%;
+    width: 60%;
   }
-
-  // @include desktop{
-  //   width: 60%;
-  //   font-size: 1.5rem;
-  // }
 }
 //HEADER ENDS HERE
 
@@ -155,37 +112,21 @@ main {
   background-color: #192231;
 
   h1 {
-    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px #2e2b2d;
     margin-top: 3rem;
-    font-size: 1.9rem;
     width: 90%;
     text-align: center;
 
     @include verticalTablet {
-      font-size: 2.9rem;
       width: 50%;
     }
   }
 
   .my-projects h1{
-    text-transform: uppercase;
     width: 100%;
-    text-shadow: 2px 2px #060606;
+    text-shadow: 2px 2px #353535;
   }
 
-  h3{
-    font-size: 1rem;
-    @include verticalTablet {
-      font-size: 2rem;
-    }
-  }
-  p{
-    font-size: 0.7rem;
-
-    @include verticalTablet {
-      font-size: 1rem;
-    }
-  }
 
   .three {
     font-family: "Shadows Into Light", cursive;
@@ -268,14 +209,9 @@ main {
   font-weight: bold;
   padding: 3rem;
 
-  p {
+  h3 {
     width: 75%;
-    font-size: 1rem;
-    color: white;
     margin: 2rem;
-    @include verticalTablet {
-      font-size: 1.9rem;
-    }
   }
 
   ul {
@@ -286,32 +222,38 @@ main {
     padding-left: 0;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.365);
-    font-size: 0.9rem;
 
     @include verticalTablet{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 60vw;
+      width: 90vw;
     }
 
     li {
       list-style: none;
       padding-left: 0;
-      font-size: 0.5rem;
+      font-size: $fs-tiny;
+      @include verticalTablet{
+        font-size: $fs-bread;
+      }
 
       a {
         text-decoration: none;
         color: #192231;
+        font-size: $fs-tiny;
+        @include verticalTablet{
+          font-size: $fs-bread;
+        }
       }
 
       i {
         padding-right: 1rem;
         color: white;
-      }
-
-      @include verticalTablet {
-        font-size: 1rem;
+        font-size: $fs-tiny;
+        @include verticalTablet{
+          font-size: $fs-bread;
+        }
       }
     }
   }
