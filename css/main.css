@@ -34,7 +34,6 @@
     transform: rotate(0deg);
   }
 }
-
 .carousel-item {
   height: 25rem;
   color: white;
@@ -47,10 +46,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   text-align: left;
 }
-
 .container h2 {
   font-size: 2rem;
 }
@@ -67,11 +65,10 @@
 }
 
 .btn-secondary {
+  background-color: burlywood;
   font-size: 0.7rem;
-  opacity: 0.8;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .btn-secondary {
     font-size: 1rem;
   }
@@ -87,26 +84,30 @@ body {
 }
 
 header {
-  height: 60vh;
+  height: 90vh;
   background-color: transparent;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../background-images/purplesky.jpg");
 }
-
+@media screen and (min-width: 768px) {
+  header {
+    height: 75vh;
+  }
+}
 header h1 {
+  text-transform: uppercase;
   margin-top: 5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
-  text-shadow: 2px 2px #544646;
+  text-shadow: 1.5px 1.5px #544646;
   margin-top: 4rem;
   color: white;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -118,38 +119,50 @@ header h1 {
   align-items: center;
   position: relative;
 }
-
 .about-me img {
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   border: 0.25rem solid rgba(255, 255, 255, 0.255);
 }
-
+@media screen and (min-width: 768px) {
+  .about-me img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
 .about-me a {
   background-color: #494e6bb9;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   padding: 1.563rem;
   text-decoration: none;
   border-radius: 0.99rem;
-  width: 17.5rem;
-  height: 0.5rem;
+  width: 15.5rem;
+  height: 0.1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 4rem;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .about-me a {
     width: 20rem;
-    height: 1rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+.about-me span {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-me span {
+    font-size: 1.5rem;
   }
 }
 
 .header-description {
-  height: 45vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,41 +179,55 @@ header h1 {
   top: 100%;
   width: 70%;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .description {
-    width: 40%;
+    width: 50%;
   }
 }
 
 main {
   width: 100vw;
-  padding-top: 5rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   background-color: #192231;
 }
-
 main h1 {
+  text-transform: uppercase;
   margin-top: 3rem;
   font-size: 1.9rem;
-  width: 50%;
+  width: 90%;
   text-align: center;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   main h1 {
     font-size: 2.9rem;
+    width: 50%;
   }
 }
-
 main .my-projects h1 {
+  text-transform: uppercase;
   width: 100%;
   text-shadow: 2px 2px #060606;
 }
-
+main h3 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  main h3 {
+    font-size: 2rem;
+  }
+}
+main p {
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  main p {
+    font-size: 1rem;
+  }
+}
 main .three {
   font-family: "Shadows Into Light", cursive;
   font-size: 160%;
@@ -221,9 +248,7 @@ main .three {
   flex-direction: column;
   align-items: center;
 }
-
 .top-3 .this-is-me {
-  font-size: 0.9rem;
   background-color: #8e6b7b61;
   width: 50%;
   margin: 2rem;
@@ -232,13 +257,6 @@ main .three {
   border: 2px solid #b0c4de;
   box-shadow: 0.1rem 0.1rem 0rem rgba(128, 128, 128, 0.516);
 }
-
-@media screen and (min-width: 769px) {
-  .top-3 .this-is-me {
-    font-size: 1.2rem;
-  }
-}
-
 .top-3 h3 {
   margin: 0 0 1rem 0;
 }
@@ -248,7 +266,7 @@ main .three {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
   background-image: url("../background-images/texture.png");
   background-color: transparent;
   background-size: cover;
@@ -258,13 +276,12 @@ main .three {
   width: 100vw;
   display: flex;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .my-projects {
     width: 100%;
+    padding: 3rem;
   }
 }
-
 .my-projects .project {
   width: 80%;
   border: 0.3rem solid #00000059;
@@ -274,6 +291,7 @@ main .three {
 }
 
 .contact {
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -286,32 +304,28 @@ main .three {
   font-weight: bold;
   padding: 3rem;
 }
-
 .contact p {
   width: 75%;
   font-size: 1rem;
   color: white;
   margin: 2rem;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .contact p {
     font-size: 1.9rem;
   }
 }
-
 .contact ul {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 50vw;
   border: 0.2rem solid white;
   padding-left: 0;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.365);
   font-size: 0.9rem;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .contact ul {
     display: flex;
     flex-direction: row;
@@ -319,24 +333,20 @@ main .three {
     width: 60vw;
   }
 }
-
 .contact ul li {
   list-style: none;
   padding-left: 0;
   font-size: 0.5rem;
 }
-
 .contact ul li a {
   text-decoration: none;
   color: #192231;
 }
-
 .contact ul li i {
   padding-right: 1rem;
   color: white;
 }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .contact ul li {
     font-size: 1rem;
   }
