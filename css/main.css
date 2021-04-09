@@ -115,10 +115,9 @@ li {
 .container {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -50%;
+  right: -50%;
   padding-bottom: 1.5rem;
-  text-align: left;
 }
 .container h2 {
   font-size: 2rem;
@@ -340,7 +339,7 @@ main .three {
   padding: 3rem;
 }
 .contact h3 {
-  width: 75%;
+  width: 80%;
   margin: 2rem;
 }
 .contact ul {
@@ -357,7 +356,7 @@ main .three {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90vw;
+    width: 80vw;
   }
 }
 .contact ul li {
