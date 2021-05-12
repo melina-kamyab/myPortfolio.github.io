@@ -25,6 +25,9 @@ header {
   @include verticalMobileSmall{
     height: 177vh;
   }
+  @include desktop{
+    height: 100vh;
+  }
 
   h1 {
     margin-top: 5rem;
@@ -91,6 +94,10 @@ header {
 
   @include verticalMobileSmall{
     height: 160vh;
+  }
+
+  @include desktop{
+    height: 80vh;
   }
 }
 
@@ -250,7 +257,7 @@ main {
       padding-left: 0;
       font-size: $fs-bread-sm;
       @include verticalTablet{
-        font-size: $fs-bread;
+        font-size: $fs-bread-sm;
       }
 
       a {
@@ -258,7 +265,7 @@ main {
         color: #192231;
         font-size: $fs-bread-sm;
         @include verticalTablet{
-          font-size: $fs-bread;
+          font-size: $fs-bread-sm;
         }
       }
 
@@ -267,7 +274,7 @@ main {
         color: white;
         font-size: $fs-bread-sm;
         @include verticalTablet{
-          font-size: $fs-bread;
+          font-size: $fs-bread-sm;
         }
       }
     }

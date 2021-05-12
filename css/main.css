@@ -167,6 +167,11 @@ header {
     height: 177vh;
   }
 }
+@media screen and (min-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+}
 header h1 {
   margin-top: 5rem;
   text-shadow: 1.5px 1.5px #492d43;
@@ -235,6 +240,11 @@ header h1 {
 @media screen and (max-width: 812px) {
   .header-description {
     height: 160vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header-description {
+    height: 80vh;
   }
 }
 
@@ -386,7 +396,7 @@ main .three {
 }
 @media screen and (min-width: 768px) {
   .contact ul li {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 .contact ul li a {
@@ -396,7 +406,7 @@ main .three {
 }
 @media screen and (min-width: 768px) {
   .contact ul li a {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 .contact ul li i {
@@ -406,7 +416,7 @@ main .three {
 }
 @media screen and (min-width: 768px) {
   .contact ul li i {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 
