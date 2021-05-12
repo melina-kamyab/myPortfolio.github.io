@@ -15,16 +15,17 @@ body {
 
 //HEADER STARTS HERE
 header {
-  height: 90vh;
+  height: 108vh;
   background-color: transparent;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../images/mountains.png");
   
-  @include verticalMobileSmall{
-    height: 177vh;
-  }
+  // @include verticalMobileSmall{
+  //   height: 177vh;
+  // }
+
   @include desktop{
     height: 100vh;
   }
@@ -50,10 +51,10 @@ header {
     height: 10rem;
     border: 0.25rem solid rgba(255, 255, 255, 0.255);
   
-    @include verticalMobileSmall{
-      width: 15rem;
-      height: 15rem;
-    }  
+    // @include verticalMobileSmall{
+    //   width: 15rem;
+    //   height: 15rem;
+    // }  
 
     @include verticalTablet {
       width: 15rem;
@@ -86,15 +87,15 @@ header {
 }
 
 .header-description {
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 
-  @include verticalMobileSmall{
-    height: 160vh;
-  }
+  // @include verticalMobileSmall{
+  //   height: 160vh;
+  // }
 
   @include desktop{
     height: 80vh;
@@ -115,9 +116,9 @@ header {
     width: 60%;
   }
 
-  @include verticalMobileSmall{
-    width: 90%;
-  }
+  // @include verticalMobileSmall{
+  //   width: 90%;
+  // }
 
 }
 //HEADER ENDS HERE
