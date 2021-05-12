@@ -20,7 +20,11 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../background-images/purplesky.jpg");
+  background-image: url("../background-images/mountains.png");
+  
+  @include verticalMobileSmall{
+    height: 177vh;
+  }
 
   h1 {
     margin-top: 5rem;
@@ -42,6 +46,11 @@ header {
     width: 10rem;
     height: 10rem;
     border: 0.25rem solid rgba(255, 255, 255, 0.255);
+  
+    @include verticalMobileSmall{
+      width: 15rem;
+      height: 15rem;
+    }  
 
     @include verticalTablet {
       width: 15rem;
@@ -79,6 +88,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+  @include verticalMobileSmall{
+    height: 160vh;
+  }
 }
 
 .description {
@@ -94,6 +107,11 @@ header {
   @include verticalTablet {
     width: 60%;
   }
+
+  @include verticalMobileSmall{
+    width: 90%;
+  }
+
 }
 //HEADER ENDS HERE
 
@@ -166,7 +184,7 @@ main {
   align-items: center;
   text-align: center;
   padding: 1rem;
-  background-image: url("../background-images/texture.png");
+  //background-image: url("../background-images/texture.png");
   background-color: transparent;
   background-size: cover;
   background-position: center center;
@@ -213,7 +231,8 @@ main {
   ul {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+  
+    width: 70vw;
     border: 0.2rem solid white;
     padding-left: 0;
     padding: 1rem;
@@ -229,7 +248,7 @@ main {
     li {
       list-style: none;
       padding-left: 0;
-      font-size: $fs-tiny;
+      font-size: $fs-bread-sm;
       @include verticalTablet{
         font-size: $fs-bread;
       }
@@ -237,7 +256,7 @@ main {
       a {
         text-decoration: none;
         color: #192231;
-        font-size: $fs-tiny;
+        font-size: $fs-bread-sm;
         @include verticalTablet{
           font-size: $fs-bread;
         }
@@ -246,7 +265,7 @@ main {
       i {
         padding-right: 1rem;
         color: white;
-        font-size: $fs-tiny;
+        font-size: $fs-bread-sm;
         @include verticalTablet{
           font-size: $fs-bread;
         }

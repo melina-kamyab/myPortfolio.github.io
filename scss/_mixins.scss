@@ -11,6 +11,18 @@
   }
 }
 
+@mixin verticalMobileBig {
+  @media screen and (max-width: 660px) {
+    @content;
+  }
+}
+
+@mixin verticalMobileSmall {
+  @media screen and (max-width: 812px) {
+    @content;
+  }
+}
+
 @mixin verticalTablet {
   @media screen and (min-width: 768px) {
     @content;
@@ -41,3 +53,7 @@
   display: flex;
   justify-content: space-between;
 }
+
+
+
+

@@ -160,7 +160,12 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../background-images/purplesky.jpg");
+  background-image: url("../background-images/mountains.png");
+}
+@media screen and (max-width: 812px) {
+  header {
+    height: 177vh;
+  }
 }
 header h1 {
   margin-top: 5rem;
@@ -181,6 +186,12 @@ header h1 {
   width: 10rem;
   height: 10rem;
   border: 0.25rem solid rgba(255, 255, 255, 0.255);
+}
+@media screen and (max-width: 812px) {
+  .about-me img {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-me img {
@@ -221,6 +232,11 @@ header h1 {
   align-items: center;
   justify-content: space-around;
 }
+@media screen and (max-width: 812px) {
+  .header-description {
+    height: 160vh;
+  }
+}
 
 .description {
   position: absolute;
@@ -235,6 +251,11 @@ header h1 {
 @media screen and (min-width: 768px) {
   .description {
     width: 60%;
+  }
+}
+@media screen and (max-width: 812px) {
+  .description {
+    width: 90%;
   }
 }
 
@@ -301,7 +322,6 @@ main .three {
   align-items: center;
   text-align: center;
   padding: 1rem;
-  background-image: url("../background-images/texture.png");
   background-color: transparent;
   background-size: cover;
   background-position: center center;
@@ -345,7 +365,7 @@ main .three {
 .contact ul {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
   border: 0.2rem solid white;
   padding-left: 0;
   padding: 1rem;
@@ -362,7 +382,7 @@ main .three {
 .contact ul li {
   list-style: none;
   padding-left: 0;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 @media screen and (min-width: 768px) {
   .contact ul li {
@@ -372,7 +392,7 @@ main .three {
 .contact ul li a {
   text-decoration: none;
   color: #192231;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 @media screen and (min-width: 768px) {
   .contact ul li a {
@@ -382,7 +402,7 @@ main .three {
 .contact ul li i {
   padding-right: 1rem;
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 @media screen and (min-width: 768px) {
   .contact ul li i {
