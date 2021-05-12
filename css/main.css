@@ -160,7 +160,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../background-images/mountains.png");
+  background-image: url("../images/mountains.png");
 }
 @media screen and (max-width: 812px) {
   header {
