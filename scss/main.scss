@@ -1,16 +1,15 @@
-@import "./variables";
-@import "./mixins";
-@import "./components/wave";
-@import "./components/carousel";
+@import './variables';
+@import './mixins';
+@import './components/wave';
+@import './components/carousel';
 
 body {
   z-index: 1;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 //HEADER STARTS HERE
@@ -20,13 +19,13 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../images/mountains.png");
-  
+  background-image: url('../images/mountains.copy.png');
+
   // @include verticalMobileSmall{
   //   height: 177vh;
   // }
 
-  @include desktop{
+  @include desktop {
     height: 100vh;
   }
 
@@ -50,17 +49,17 @@ header {
     width: 10rem;
     height: 10rem;
     border: 0.25rem solid rgba(255, 255, 255, 0.255);
-  
+
     // @include verticalMobileSmall{
     //   width: 15rem;
     //   height: 15rem;
-    // }  
+    // }
 
     @include verticalTablet {
       width: 15rem;
       height: 15rem;
     }
-    @include desktop{
+    @include desktop {
       width: 20rem;
       height: 20rem;
     }
@@ -97,7 +96,7 @@ header {
   //   height: 160vh;
   // }
 
-  @include desktop{
+  @include desktop {
     height: 80vh;
   }
 }
@@ -119,7 +118,6 @@ header {
   // @include verticalMobileSmall{
   //   width: 90%;
   // }
-
 }
 //HEADER ENDS HERE
 
@@ -144,14 +142,13 @@ main {
     }
   }
 
-  .my-projects h1{
+  .my-projects h1 {
     width: 100%;
     text-shadow: 2px 2px #353535;
   }
 
-
   .three {
-    font-family: "Shadows Into Light", cursive;
+    font-family: 'Shadows Into Light', cursive;
     font-size: 160%;
     font-weight: bolder;
     width: 3rem;
@@ -224,7 +221,7 @@ main {
   align-items: center;
   justify-content: space-around;
   background-color: #767373;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #192231;
   font-weight: bold;
@@ -238,14 +235,14 @@ main {
   ul {
     display: flex;
     flex-direction: column;
-  
+
     width: 70vw;
     border: 0.2rem solid white;
     padding-left: 0;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.365);
 
-    @include verticalTablet{
+    @include verticalTablet {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -256,7 +253,7 @@ main {
       list-style: none;
       padding-left: 0;
       font-size: $fs-bread-sm;
-      @include verticalTablet{
+      @include verticalTablet {
         font-size: $fs-bread-sm;
       }
 
@@ -264,7 +261,7 @@ main {
         text-decoration: none;
         color: #192231;
         font-size: $fs-bread-sm;
-        @include verticalTablet{
+        @include verticalTablet {
           font-size: $fs-bread-sm;
         }
       }
@@ -274,7 +271,7 @@ main {
         padding-right: 1rem;
         color: white;
         font-size: $fs-bread-sm;
-        @include verticalTablet{
+        @include verticalTablet {
           font-size: $fs-bread-sm;
         }
       }
